@@ -1,10 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Before you can start your app you must  
+## Before starting the app:
+- Register and create a [TokBox account](https://tokbox.com/account/user/signup)
+- Create a new project and save the API key
+- Within the project tools, create and save a sessionID and token   
+- Rename the `config-example.js` to `config.js` and add your TokBox credentials.   
 
-Change the `config-example.js` to `config.js` and add your TokBox credentials.  
-
-## Then, to start the app  
+## To start the app:   
 
 In the project directory, run:  
 
