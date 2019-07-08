@@ -1,33 +1,24 @@
-.App {
-  text-align: center;
+body, html {
+  background-color: pink;
+  height: 100%;
+  font-family: Verdana, Geneva, sans-serif
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.connectionStatus {
+  padding-top: 20px;
+  margin-left: 5%;
+  font-size: 1.5em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.subscriber {
+  margin-left: 10%;
 }
-
-.App-link {
-  color: #61dafb;
+.publisher {
+  float: right;
+  margin-right: 10%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.OTPublisherContainer {
+  width: 80vh !important;
+  height: 80vh !important;
+}
+#error {
+  color: red;
 }
