@@ -29,7 +29,6 @@ class App extends React.Component {
   render() {
     return (
       <OTSession
-        id="videos"
         apiKey={this.props.apiKey}
         sessionId={this.props.sessionId}
         token={this.props.token}

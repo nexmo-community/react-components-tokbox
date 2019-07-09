@@ -39,12 +39,12 @@ class Publisher extends React.Component {
         {this.state.error ? <div id="error">{this.state.error}</div> : null}
 
         <OTPublisher
-        properties={{
-          publishAudio: this.state.audio,
-          publishVideo: this.state.video,
-          videoSource: this.state.videoSource === 'screen' ? 'screen' : undefined
-        }}
-        onError={this.onError}
+          properties={{
+            publishAudio: this.state.audio,
+            publishVideo: this.state.video,
+            videoSource: this.state.videoSource === 'screen' ? 'screen' : undefined
+          }}
+          onError={this.onError}
         />
 
         <RadioButtons
@@ -73,7 +73,7 @@ class Publisher extends React.Component {
           initialChecked={this.state.video}
           onChange={this.setVideo}
         />
-        
+
       </div>
     );
   }
