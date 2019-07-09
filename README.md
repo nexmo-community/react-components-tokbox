@@ -19,4 +19,4 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 ## How to Use this Code
-[Nexmo Blog](https://github.com/Nexmo/blog-posts/pull/246)
+Checkout a [Nexmo blogpost](https://github.com/Nexmo/blog-posts/pull/246) on how build out each React component
