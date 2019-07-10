@@ -1,6 +1,5 @@
 import React from 'react';
 import { OTPublisher } from 'opentok-react';
-import RadioButtons from './RadioButtons';
 import CheckBox from './CheckBox';
 
 class Publisher extends React.Component {
@@ -23,8 +22,8 @@ class Publisher extends React.Component {
     this.setState({ video });
   }
 
-  setVideoSource = (videoSource) => {
-    this.setState({ videoSource });
+  changeVideoSource = (videoSource) => {
+    (this.state.videoSource !== 'camera') ? this.setState({videoSource: 'camera'}) : this.setState({ videoSource: 'screen' })
   }
 
   onError = (err) => {
@@ -47,19 +46,9 @@ class Publisher extends React.Component {
           onError={this.onError}
         />
 
-        <RadioButtons
-          buttons={[
-            {
-              label: 'Use Camera',
-              value: 'camera'
-            },
-            {
-              label: 'Use Screen',
-              value: 'screen'
-            }
-          ]}
-          initialChecked={this.state.videoSource}
-          onChange={this.setVideoSource}
+        <CheckBox
+          label="Share Screen"
+          onChange={this.changeVideoSource}
         />
 
         <CheckBox
